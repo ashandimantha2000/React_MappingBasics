@@ -2,12 +2,13 @@ import Jobs from './components/Jobs'
 import jobData from './components/jobData'
 
 function App() {
-  const userData = jobData.map((data=>{
-    return <Jobs fname={data.name} fdegree={data.degree} fjob={data.job}/>
-  }))
+  //Defining a variable to store the JSX we want to render
+  const friendsData =jobData.map(data => <Jobs name={data.name} degree={data.degree} job={data.job} />)
   return (
     <div>
-      {userData}
+      <h3>My Friends</h3>
+      {/* Render the stored jsx */}
+      {friendsData}
     </div>
   )
 }

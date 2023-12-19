@@ -1,11 +1,11 @@
+import React from 'react'
 
 function Jobs(props) {
   return (
     <div>
-        <h1>My Friends</h1>
-        {props.fname&&<h2>Name: {props.fname}</h2>}
-        <h3>Degree: {props.fdegree}</h3>
-        <h3>Occupation: {props.fjob}</h3>
+      <p>Name: {props.name}</p>
+      <p>Degree: {props.degree}</p>
+      <p>Occupation: {props.job}</p>
     </div>
   )
 }
